@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Input from "../components/CustomInput";
 
 const Form = ({ onSubmit }) => {
   const [formData, setFormData] = useState({
@@ -33,14 +34,13 @@ const Form = ({ onSubmit }) => {
         >
           Email Address *
         </label>
-        <input
+        <Input
           type="email"
           id="email"
           name="email"
           required
           value={formData.email}
           onChange={handleChange}
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-md focus:border-gray-300 focus:ring focus:ring-gray-200 focus:ring-opacity-50 p-2"
           placeholder="you@example.com"
         />
       </div>
@@ -52,13 +52,12 @@ const Form = ({ onSubmit }) => {
         >
           Full Name
         </label>
-        <input
+        <Input
           type="text"
           id="fullName"
           name="fullName"
           value={formData.fullName}
           onChange={handleChange}
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-md focus:border-gray-300 focus:ring focus:ring-gray-200 focus:ring-opacity-50 p-2"
           placeholder="John Doe"
         />
       </div>
@@ -70,13 +69,12 @@ const Form = ({ onSubmit }) => {
         >
           Username
         </label>
-        <input
+        <Input
           type="text"
           id="username"
           name="username"
           value={formData.username}
           onChange={handleChange}
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-md focus:border-gray-300 focus:ring focus:ring-gray-200 focus:ring-opacity-50 p-2"
           placeholder="johndoe"
         />
       </div>
@@ -88,13 +86,12 @@ const Form = ({ onSubmit }) => {
         >
           Phone Number
         </label>
-        <input
+        <Input
           type="tel"
           id="phone"
           name="phone"
           value={formData.phone}
           onChange={handleChange}
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-md focus:border-gray-300 focus:ring focus:ring-gray-200 focus:ring-opacity-50 p-2"
           placeholder="+1234567890"
         />
       </div>
@@ -106,13 +103,12 @@ const Form = ({ onSubmit }) => {
         >
           Location
         </label>
-        <input
+        <Input
           type="text"
           id="location"
           name="location"
           value={formData.location}
           onChange={handleChange}
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-md focus:border-gray-300 focus:ring focus:ring-gray-200 focus:ring-opacity-50 p-2"
           placeholder="City, Country"
         />
       </div>
@@ -124,13 +120,12 @@ const Form = ({ onSubmit }) => {
         >
           Website
         </label>
-        <input
+        <Input
           type="url"
           id="website"
           name="website"
           value={formData.website}
           onChange={handleChange}
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-md focus:border-gray-300 focus:ring focus:ring-gray-200 focus:ring-opacity-50 p-2"
           placeholder="https://example.com"
         />
       </div>
